@@ -10,15 +10,32 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="logo"> Dog Api</h1>
-
-    </header>
-    <section class="search-container"></section>
-    <section class="result-container"></section>
-    <footer>
-        copyright 2020 dat
-    </footer>
+    <section id="container">
+      <h1 class="display-4 mb-4">Dog API: Simple GET Request</h1>
+      <hr />
+      <div id="input"></div>
+      <form id="dog-num-form">
+        <div class="form-group">
+          <h3>How many dog photos do you want between 3-50?</h3>
+          <input
+            type="text"
+            id="num-dog"
+            class="form-control"
+            placeholder="Default photo # is 3"
+            required
+          />
+        </div>
+        <div class="button">
+          <input
+            type="submit"
+            id="get"
+            class="btn btn-primary mr-4"
+            value="Get Dog Photo!"
+          />
+        </div>
+        <div class="dog-img-results"></div>
+      </form>
+    </section>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
